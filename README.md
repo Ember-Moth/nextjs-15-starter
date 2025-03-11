@@ -1,4 +1,4 @@
-🌍 *[English](README.md) ∙ [简体中文](README_zh.md) ∙ [日本语](README_ja.md)*
+🌍 *[English](README.md) ∙ [简体中文](README.md) ∙ [日本语](README_ja.md)*
 
 # Next Forge - 多语言 Next.js 15 启动模板
 
