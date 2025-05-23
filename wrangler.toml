@@ -1,7 +1,39 @@
-  main = ".open-next/worker.js"
-  name = "next-starter"
-  compatibility_date = "2025-05-23"
-  compatibility_flags = ["nodejs_compat"]
-  [assets]
-  directory = ".open-next/assets"
-  binding = "ASSETS"
+name = "next-starter"
+main = ".open-next/worker.js"
+compatibility_date = "2025-05-23"
+compatibility_flags = ["nodejs_compat"]
+
+# -----------------------------------------------------------------------------
+# 静态资源绑定
+# -----------------------------------------------------------------------------
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# -----------------------------------------------------------------------------
+# 环境变量（部署时注入）
+# -----------------------------------------------------------------------------
+[vars]
+# 网站基础信息
+NEXT_PUBLIC_SITE_URL = "https://www.zenith-flow.com"
+NEXT_PUBLIC_LOCALE_DETECTION = "false"
+
+# 分析平台
+NEXT_PUBLIC_GOOGLE_ID = ""
+NEXT_PUBLIC_BAIDU_TONGJI = ""
+NEXT_PUBLIC_PLAUSIBLE_DOMAIN = ""
+NEXT_PUBLIC_PLAUSIBLE_SRC = ""
+
+# 广告
+NEXT_PUBLIC_GOOGLE_ADSENSE_ID = ""
+
+# Resend 邮件服务
+RESEND_API_KEY = "re_2GRzbax9_P18LoMpUZhX9wF2c7YiroDLS"
+ADMIN_EMAIL = "support@zenith-flow.com"
+RESEND_AUDIENCE_ID = "002fd254-c12e-4885-a953-ade0d374c9f4"
+
+# Upstash Redis 配置
+UPSTASH_REDIS_REST_URL = ""
+UPSTASH_REDIS_REST_TOKEN = ""
+UPSTASH_REDIS_NEWSLETTER_RATE_LIMIT_KEY = "newsletter-rate-limit"
+DAY_MAX_SUBMISSIONS = ""
