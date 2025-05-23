@@ -1,13 +1,14 @@
 {
   "name": "next-forge",
   "version": "2.0.0",
+  "packageManager": "pnpm@9.10.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "next build && npx open-next build && npx wrangler dev",
+    "deploy": "next build && npx open-next build && npx wrangler deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
